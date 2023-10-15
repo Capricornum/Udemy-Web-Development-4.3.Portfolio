@@ -1,0 +1,55 @@
+body {
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(29, 17, 35);
+  color: var(--mainColor);
+}
+
+h3 {
+  font-weight: 200;
+  font-size: 19px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 3em;
+}
+
+button[type=submit] {
+  background-image: var(--uiGradient);
+  border: none;
+  color: inherit;
+  font: inherit;
+
+  padding: .5em 2em;
+  border-top-left-radius: 15% 50%;
+  border-top-right-radius: 15% 50%;
+  border-bottom-left-radius: 15% 50%;
+  border-bottom-right-radius: 15% 50%;
+}
+
+button:hover {
+  background-image: var(--uiGradientHover);
+}
+
+button:active {
+  background-image: var(--uiGradientActive);
+}
+
+a:visited {
+  color: var(--mainColor);
+}
+
+input {
+  border: 2px solid var(--borderColor);
+  outline: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

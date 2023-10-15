@@ -1,0 +1,42 @@
+/* Header Footer */
+#mainHeader {
+  border-bottom: var(--borderStyleMain);
+}
+
+#mainFooter {
+  /* border-top: var(--borderStyleMain); */
+  padding-top: .3em;
+  padding-bottom: .3em;
+}
+
+#mainHeader {
+  background-color: var(--headerColor);
+}
+
+#mainHeader ul {
+  list-style-type: none;
+  margin: 0;
+}
+
+#mainHeader li {
+  display: inline-block;
+}
+
+.navLink {
+  text-decoration: none;
+  display: inline-block;
+  width: 7em;
+}
+
+.navLink:hover {
+  background-image: var(--uiGradient);
+}
+
+/* .navLink:empty, .navLink:visited {
+  color: inherit;
+} */
+
+footer p {
+  text-align: right;
+  margin: 0 2em 0 0;
+}

@@ -1,0 +1,11 @@
+:root {
+  --uiGradientHover: linear-gradient(to bottom right, rgb(25, 48, 51), rgb(89, 154, 163));
+  --uiGradient: linear-gradient(to right, rgb(10, 77, 77), rgb(89, 154, 163));
+  --uiGradientActive: linear-gradient(to top right, rgb(25, 48, 51), rgb(89, 154, 163));
+  --headerColor: rgb(43, 15, 96);
+  --mainColor: rgb(230, 230, 230);
+  --borderColor: rgb(25, 48, 51);
+  --borderStyleMain: .2em solid var(--borderColor);
+}
+
+/* rgb(81, 0, 128); purple option */

@@ -1,0 +1,103 @@
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 2em;
+}
+
+main hgroup {
+  width: 100%
+}
+
+section {
+  border: var(--borderStyleMain);
+  min-width: 20em;
+  flex-basis: 30%;
+  margin: .5em 0;
+}
+
+@media (max-width: 1070px) {
+  section {
+    flex-basis: 45%;
+  }
+  
+  #detailsSection {
+    flex-basis: 95%;
+  }
+}
+
+@media (max-width: 740px) {
+  section {
+    flex-basis: 95%;
+  }
+}
+
+input[type=number] {
+  width: 80%;
+  text-align: center;
+  padding: .8em;
+  margin: .2em;
+}
+
+menu {
+ padding: 0;
+}
+
+menu p {
+  display: inline-block;
+  margin: .2em;
+}
+
+dl {
+  width: 80%;
+  margin: auto;
+}
+
+dt {
+  text-align: left;
+  width: 55%;
+}
+
+dd {
+  text-align: right;
+  margin: 0;
+  width: 40%;
+}
+
+dt, dd {
+  display: inline-block;
+  line-height: 2.3em;
+}
+
+dl button {
+  background-color: inherit;
+  color: inherit;
+  font: inherit;
+  border: none;
+}
+
+.detailsButton {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-size: 14px;
+}
+
+#profitSection dl {
+  border-bottom: var(--borderStyleMain);
+}
+
+#detailsSection output {
+  margin: 1.5em auto;
+}
+
+aside p {
+  font-size: 14px;
+}
+
+figure {
+  max-width: 18em;
+  margin: 1em auto;
+}

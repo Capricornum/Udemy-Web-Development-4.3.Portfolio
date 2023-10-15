@@ -1,0 +1,26 @@
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul img {
+  vertical-align: middle;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 2em;
+}
+
+.navLink {
+  text-decoration: none;
+}
+
+.navLink, .navLink:visited {
+  color: black;
+}
+
+.navLink:hover, #currentPage {
+  color: green;
+}

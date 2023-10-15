@@ -1,0 +1,16 @@
+#investmentSection output, #profitSection output, #detailsSection output {
+  display: none;
+}
+
+#warningMessage {
+  color: red;
+  visibility: hidden;
+}
+
+#profitCanvas {
+  margin: 2em 0 1em 0;
+}
+
+#details, #detailsWaitingMessage {
+  margin: 0 1.5em;
+}

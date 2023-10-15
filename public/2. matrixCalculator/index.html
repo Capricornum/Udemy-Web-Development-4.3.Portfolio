@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Matrix Calculator</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Béla Bufe" />
+  <meta name="description" content="A calculator for the matrix accounts by an independent affiliate." />
+
+  <link rel="stylesheet" href="styles/root.css" />
+  <link rel="stylesheet" href="styles/general.css" />
+  <link rel="stylesheet" href="styles/headerFooter.css" />
+  <link rel="stylesheet" href="styles/calculator.css" />
+  <link rel="stylesheet" href="styles/output.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- <header id="mainHeader">
+    <nav>
+      <ul>
+        <li><a class="navLink" href="">
+            <h3>Main</h3>
+          </a></li>
+        <li><a class="navLink" href="calculator.html">
+            <h3>Calculator</h3>
+          </a></li>
+        <li><a class="navLink" href="">
+            <h3>News</h3>
+          </a></li>
+        <li><a class="navLink" href="">
+            <h3>Tutorials</h3>
+          </a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+  <main>
+    <hgroup>
+      <h1>Calculator</h1>
+      <h3>
+        A compound interest calculator for the
+        <!-- <a href="" target="_blank"> text </a> -->
+        matrix programs.
+      </h3>
+    </hgroup>
+
+    <section id="investmentSection">
+      <h3>Investment</h3>
+      <output>
+        <dl>
+          <dt><button type="button" class="detailsButton" value="accountType">Account type:</button></dt>
+          <dd id="accountType">???</dd>
+          <dt><button type="button" class="detailsButton" value="initialInvestment">Your investment:</button></dt>
+          <dd id="initialInvestment">???</dd>
+          <dt><button type="button" class="detailsButton" value="bonus">Bonus:</button></dt>
+          <dd id="bonus">???</dd>
+          <dt><button type="button" class="detailsButton" value="totalInvestment">Total investment:</button></dt>
+          <dd id="totalInvestment">???</dd>
+        </dl>
+      </output>
+      <form>
+        <fieldset>
+          <label for="investmentInput">Amount in dollar:</label>
+          <input type="number" inputmode="numeric" name="investment" id="investmentInput" placeholder="500$-1.000.000$"
+            required autofocus />
+
+          <menu>
+            <p>
+              <input type="radio" name="reinvestOption" value="reinvestOptionFalse" checked />
+              <label for="reinvestOptionFalse">Collect profits</label>
+            </p>
+
+            <p>
+              <input type="radio" name="reinvestOption" value="reinvestOptionTrue" />
+              <label for="reinvestOptionTrue">Reinvest profits</label>
+            </p>
+          </menu>
+
+          <p id="warningMessage">Warning Message</p>
+
+          <button type="submit">Calculate</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="profitSection">
+      <h3>Profit</h3>
+      <p id="profitWaitingMessage">Awaiting investment input...</p>
+      <output>
+        <dl>
+          <dt><button type="button" class="detailsButton" value="duration">Duration:</button></dt>
+          <dd id="duration">???</dd>
+          <dt><button type="button" class="detailsButton" value="cashProfit">Cash profit:</button></dt>
+          <dd id="cashProfit">???</dd>
+          <dt><button type="button" class="detailsButton" value="equityProfit">Equity profit:</button></dt>
+          <dd id="equityProfit">???</dd>
+          <dt><button type="button" class="detailsButton" value="totalProfit">Total profit:</button></dt>
+          <dd id="totalProfit">???</dd>
+
+          <aside>
+            <p>Profit excludes your initial investment and bonus.</p>
+          </aside>
+        </dl>
+        <figure>
+          <canvas id="profitCanvas" aria-label="Doughnut chart of investment distribution"></canvas>
+          <figcaption>Distribution of investment after account duration.</figcaption>
+        </figure>
+      </output>
+    </section>
+
+    <section id="detailsSection">
+      <h3>Details</h3>
+      <p id="detailsWaitingMessage">Awaiting investment input...</p>
+      <output>
+        <h4 id="detailsTitle"></h4>
+
+        <p id="details"></p>
+      </output>
+    </section>
+  </main>
+
+  <footer id="mainFooter">
+    <p>No guarantee for the correctness of calculations.</p>
+    <p>thecryptosponsor@gmail.com</p>
+  </footer>
+
+  <script type="module" src="scripts/main.js"></script>  
+  
+</body>
+
+</html>
